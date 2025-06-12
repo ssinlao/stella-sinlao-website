@@ -3,10 +3,7 @@ import Image from 'next/image';
 import styles from '/src/styles/Home.module.css';
 
 export default function Home() {
-  const UnoptimizedImage = (props) => {
-  return <Image {...props} unoptimized />;
-  };
-  
+
   return (
     <div>
       <h1 className={styles.nameHeader}>Stella Sinlao</h1>
