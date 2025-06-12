@@ -1,0 +1,89 @@
+.navbarWrapper {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  width: 33vh;
+  height: 50vh;
+  background-color: #bb9e84;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: 
+    left 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+    opacity 0.5s ease;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.offscreen {
+  left: -400px;
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.center {
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.left {
+  left: 20px;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.headerWrapper {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbarHeading {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #000000;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+}
+
+.navList {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: 160px;
+  gap: 10px 10px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconLink {
+  text-decoration: none;
+}
+
+.icon {
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}

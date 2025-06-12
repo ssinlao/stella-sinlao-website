@@ -1,0 +1,58 @@
+.browserWindow {
+  position: fixed;
+  left: calc(33vh + 40px);
+  transform: translateY(-50%) scale(0);
+  width: calc(100vw - 33vh - 60px);
+  max-width: 1000px;
+  height: 600px;
+  margin-top: 20vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.browserWindow.open {
+  transform: scale(1);
+}
+
+.browserHeader {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.browserTitle {
+  font-size: 1.1rem;
+}
+
+.browserClose {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.browserClose:hover {
+  color: #d00;
+}
+
+.browserContent {
+  flex: 1;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  overflow-y: auto;
+}
