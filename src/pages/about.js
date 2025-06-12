@@ -6,7 +6,9 @@ export default function About() {
   return (
     <div className={styles.aboutContainer}>
       <h1 className={styles.aboutTitle}>About Me</h1>
-      <Image
+      <hr />
+      <div className={styles.topContainer}>
+        <Image
         src="/linkedin.jpg"
         alt="Your profile"
         className={styles.profileImage}
@@ -19,6 +21,7 @@ export default function About() {
           <li>🎓 Degree: Currently pursuing a B.S. in Computer Science</li>
           <li>🔎 Interests: UI/UX, Full Stack Development, Graphic Design, Data Analysis, Data Processing, Machine Learning, Game Development </li>
         </ul>
+      </div>
       <TechStack />
     </div>
   );

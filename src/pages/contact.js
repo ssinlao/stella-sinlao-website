@@ -5,6 +5,7 @@ export default function Contact() {
   return (
     <section className={styles.contactSection}>
       <h1 className={styles.title}>Contact Me!</h1>
+      <hr />
       <p className={styles.description}>
         Feel free to reach out to me on any of these platforms:
       </p>
