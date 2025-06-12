@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import BrowserWindow from './BrowserWindow';
-import Home from '/src/pages/Home';
-import About from '/src/pages/About';
-import Projects from '/src/pages/Projects';
-import Contact from '/src/pages/Contact';
+import Home from '/src/pages/home.js';
+import About from '/src/pages/about.js';
+import Projects from '/src/pages/projects.js';
+import Contact from '/src/pages/contact.js';
 
 export default function Layout({ children }) {
   const [showHome, setShowHome] = useState(false);
