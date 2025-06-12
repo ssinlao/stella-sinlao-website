@@ -1,3 +1,9 @@
 export default function Index() {
-  return null;
+  return (
+    <>
+    <head>
+      <title> stella's website</title>
+    </head>
+    </>
+  );
 }
